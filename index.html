@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SOUP MALL</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/b3bd59afdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top_wrap">
+        <header id="top">
+            <h1><a href="index.html"><img src="images/logo.png" alt="SOUP MALL"></a></h1>
+            <ul class="quick">
+                <li><a href="#">로그인</a></li>    
+                <li><a href="#">회원가입</a></li>    
+                <li><a href="#">장바구니</a></li>    
+                <li><a href="#">사이트맵</a></li>    
+                <li><a href="#">English</a></li>    
+            </ul> <!--quick-->
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#"><span>AD STUDIO<br>SHOP</span></a></li>
+                    <li><a href="#"><span>OUTLET &amp;<br>불곰마켓</span></a></li>                   
+                    <li><a href="new.html">NEW</a></li>
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">MAGAZINE</a></li>
+                    <li><a href="event.html">EVENT</a></li>
+                </ul>
+            </nav><!--gnb-->   
+        </header><!--top-->
+    </div><!--top_wrap-->
+    <section id="container">
+        <h2>이벤트</h2>
+        <div id="content_wrap">
+            <div class="swiper-container">
+                <div id="main_wrap" class="swiper-wrapper">
+                    <a href="#" class="main1 swiper-slide">1</a>    
+                    <a href="#" class="main2 swiper-slide">2</a>    
+                    <a href="#" class="main3 swiper-slide">3</a>    
+                    <a href="#" class="main4 swiper-slide">4</a>    
+                </div><!--main_wrap-->
+            
+                <div class="swiper-pagination"></div><!--페이지 넘김-->
+            </div><!--swiper-container-->
+            
+            <!-- 이 위치에 js가 있어야 실행됨 -->
+            <!-- Swiper JS -->
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/swiper.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                  direction: 'vertical',
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                });
+            </script>
+            
+            <ul class="brand_btn">
+                <li><a href="#"><img src="images/brandBtn_quick.png" alt="brand"></a></li>        
+                <li><a href="#"><img src="images/brandBtn.png" alt="brand"></a></li>        
+            </ul><!--brand_btn-->    
+        </div><!--content_wrap-->
+        
+        <aside id="banner">
+            <ul>
+                <li><a href="#"><img src="images/banner1.jpg" alt="banner"></a></li>
+                <li><a href="#"><img src="images/banner2.jpg" alt="banner"></a></li>
+                <li><a href="#"><img src="images/banner3.jpg" alt="banner"></a></li>
+                <li><a href="#"><img src="images/banner4.jpg" alt="banner"></a></li>
+            </ul>    
+        </aside><!--banner-->
+        <aside id="notice">
+            <div id="notice_wrap">
+                <div class="notice_con">
+                    <h3><a href="#"><i class="fas fa-phone"></i> 1588-2724</a></h3>
+                    <p>상담 가능 시간 : MON-FRI AM10-PM5 / 주말, 공휴일 OFF</p>        
+                </div><!--notice_con--> 
+                <ul class="notice_list">
+                    <li><a href="#">멤버십 혜택안내</a></li>    
+                    <li><a href="#">공지사항</a></li>    
+                    <li><a href="#">F&amp;Q</a></li>    
+                    <li><a href="#">매장찾기</a></li>    
+                    <li><a href="#">마이페이지</a></li>    
+                </ul><!--notice_list-->
+            </div><!--notice_wrap-->  
+        </aside><!--notice-->  
+    </section><!--container-->
+    
+    <footer id="bottom">
+        <div class="bot_left">
+            <nav id="fnb">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>    
+            </nav><!--fnb-->
+            <address>
+                (주)동광인터내셔날 대표 : 이재수 주소 : 서울특별시 금천구 가산디지털2로 123 (가산동) 8층 (주)동광인터내셔날<br>
+                사업자등록번호 : 114-81-84875 통신판매업신고번호 : 제2010-서울금천-0378호 대표번호 : 1588-2724<br>
+                개인정보관리책임자 : 이진호 이메일 : soupmall@e-dongkwang.co.kr  
+            </address>
+            <p>COPYRIGHT &copy; (주)동광인터내셔날 . ALL RIGHTS RESERVED.</p>
+        </div><!--bot_left-->
+        <div class="bot_right">
+            <ul class="sns">
+                <li><a href="https://www.facebook.com/Souproom/"><img src="images/bt_sns01.png" alt="family"></a></li>
+                <li><a href="https://www.instagram.com/soupmall_official/"><img src="images/bt_sns02.png" alt="family"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCmRseUsrf7g6C5NjLqiA4aw"><img src="images/bt_sns03.png" alt="family"></a></li>
+            </ul>
+            <div class="family_wrap">
+                    <select onchange="window.open(value,'_blank');" id="list" title="동광인터내셔날 FAMILLY SITE">
+                        <option selected>FAMILLY SITE</option>
+                        <option value="https://soupmall.co.kr/product/list.html?cate_no=90">SOUP</option>
+                        <option value="https://soupmall.co.kr/product/list.html?cate_no=145">VISIT IN NEWYORK</option>
+                        <option value="https://soupmall.co.kr/product/list.html?cate_no=2811">AD HOCS</option>
+                        <option value="https://soupmall.co.kr/product/list.html?cate_no=127">SweetSOUP</option>
+                        <option value="https://soupmall.co.kr/product/list.html?cate_no=3058">QUEEN STYLE</option>
+                        <option value="https://soupmall.co.kr/product/list.html?cate_no=2468">DECADENCE</option>
+                    </select>
+            </div><!--family_wrap-->
+            <p class="ie8">현 웹사이트는 iNTERNET eXPLORER 8.0 이상에 최적화 되어 있습니다.</p>    
+        </div><!--bot_right-->    
+    </footer><!--bottom-->
+</body>
+</html>
